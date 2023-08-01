@@ -1,6 +1,6 @@
 [
     {
-        "title": {
+        "products": {
             "title": "Tablet",
             "description": "esto es una prueba",
             "price": 5000,
@@ -17,7 +17,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc124",
         "stock": 25,
-        "id":2
+        "id": 2
     },
     {
         "title": "TV",
@@ -26,7 +26,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc125",
         "stock": 25,
-        "id":3
+        "id": 3
     },
     {
         "title": "Ipad",
@@ -35,7 +35,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc126",
         "stock": 25,
-        "id":4
+        "id": 4
     },
     {
         "title": "Macbook",
@@ -44,7 +44,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc127",
         "stock": 25,
-        "id":5
+        "id": 5
     },
     {
         "title": "Notebook",
@@ -53,7 +53,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc128",
         "stock": 25,
-        "id":6
+        "id": 6
     },
     {
         "title": "Tablet",
@@ -62,7 +62,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc129",
         "stock": 25,
-        "id":7
+        "id": 7
     },
     {
         "title": "Teclado",
@@ -71,7 +71,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc130",
         "stock": 25,
-        "id":8
+        "id": 8
     },
     {
         "title": "Microprocesador i-310100f",
@@ -80,7 +80,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc131",
         "stock": 25,
-        "id":9
+        "id": 9
     },
     {
         "title": "Placa de video rtx 3090TI",
@@ -89,7 +89,7 @@
         "thumbnail": "esto es una prubea",
         "code": "abc132",
         "stock": 25,
-        "id":10
+        "id": 10
     }
-
+    
 ]
