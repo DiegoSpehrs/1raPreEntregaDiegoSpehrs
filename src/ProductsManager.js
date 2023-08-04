@@ -64,7 +64,7 @@ class ProductManager{
             return 'No hay un producto con ese id'
           }
           const product = productPrev[productIndex]
-          productPrev[productIndex] = {...obj,...product}
+          productPrev[productIndex] = {...product,...obj}
           await fs.promises.writeFile(this.path, JSON.stringify(productPrev))  
         } catch (error) {
             return error

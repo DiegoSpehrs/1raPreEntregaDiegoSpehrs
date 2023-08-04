@@ -12,9 +12,9 @@ router.post('/',async(req,res)=>{
     }
 })
 router.get('/:cid',async(req,res)=>{
-    const {id} = req.params
+    const {cid} = req.params
     try{
-        const cart = cartManager.getOneCart(+id)
+        const cart = cartManager.getOneCart(+cid)
         res.status(200).json({message:'cart',cart})
     }catch(error){
         res.status(500).json({error})

@@ -33,7 +33,7 @@ class CartsManager {
         }
         const newCart = {products:[],id}
         carts.push(newCart)
-        await fs.promises.readFile(this.path, JSON.stringify(carts))
+        await fs.promises.writeFile(this.path, JSON.stringify(carts))
         return newCart
     }catch(error){
             return error
@@ -42,8 +42,8 @@ class CartsManager {
     async addProduct(idCart,idProduct){
      try{   
         const carts = await this.getAllCarts()
-        const cart = carts.find(c=>c.product===idCart)
-        const productIndex = cart.products.findIndex(p=>p.id===idProduct)
+        const cart = carts.find(c=>c.id===idCart)
+        const productIndex = cart.products.findIndex(p=>p.product===idProduct)
         if(productIndex===-1){
             cart.prdocuts.push({product:idProduct,quantity:1})
         }else{

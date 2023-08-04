@@ -19,9 +19,9 @@ router.get('/',async(req,res)=>{
     }   
 })
 router.get('/:pid',async(req,res)=>{
-    const {idProduct} = req.params
+    const {pid} = req.params
     try{
-    const product = await productManager.getProductById(+idProduct)
+    const product = await productManager.getProductById(+pid)
     res.status(200).json({message: 'Product',product})    
     }catch(error){
         res.status(500).json({error})
@@ -36,18 +36,18 @@ try{
 }
 })
 router.put('/:pid',async(req,res)=>{
-    const {idProduct} = req.params
+    const {pid} = req.params
     try{
-      const producUpdate = await productManager.updateProduct(+idProduct,req.body)
+      const producUpdate = await productManager.updateProduct(pid,req.body)
       res.status(200).json({message:'Product updated'})  
     }catch(error){
         res.status(500).json({error})
     }
 })
 router.delete('/:pid',async(req,res)=>{
-    const {idProduct} = req.params
+    const {pid} = req.params
     try{
-        const response = await productManager.deletProduct(+idProduct)
+        const response = await productManager.deletProduct(pid)
         res.status(200).json({message:'Product deleted'})
     }catch(error){
         res.status(500).json({error})
